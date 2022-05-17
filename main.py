@@ -46,8 +46,15 @@ def main(filename):
         filename (str): File name containing encrypted text
 
     Returns:
-        (Tuple[str, str, int]):
-            Tuple of
+        (Tuple[str, str, str, int]):
+            Tuple of:
+              * (str) Key used for encryption/decryption
+              * (str) Encrypted text
+              * (str) Decrypted text
+              * (int) Sum of ASCII values in decrypted text
+    
+    Raises:
+        AssertError: if incorrect args are given
     """
     assert type(filename) == str
 
