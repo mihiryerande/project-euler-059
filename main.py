@@ -35,9 +35,10 @@
 
 from itertools import permutations
 from string import ascii_lowercase
+from typing import Tuple
 
 
-def main(filename):
+def main(filename: str) -> Tuple[str, str, str, int]:
     """
     Decrypts the text given in `filename` assuming that it was XOR-encrypted
       with a key of three lowercase letters, and the text contains common English words.
